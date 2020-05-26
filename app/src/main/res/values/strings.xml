@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CAT1-todoNotes</string>
+    <string name="save">Save</string>
 </resources>
