@@ -61,7 +61,7 @@ public static final int  ADD_NOTE_REQUEST =1;
             public void onChanged(@Nullable List<Note> notes) { //triggered everytime the livedata changes
                 //update RecyclerView
                 //the adapter is updated everytime obChanged is called, when new data comes
-             adapter.setNotes(notes);
+             adapter.submitList(notes);
             }
         });
 
