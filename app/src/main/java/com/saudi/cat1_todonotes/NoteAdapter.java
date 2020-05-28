@@ -44,6 +44,12 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
         notifyDataSetChanged(); //updating the adapter
     }
 
+    //this method is added to pass a node to the main activity
+    public Note getnoteAt(int position){
+        return notes.get(position);
+    }
+
+
     //create a holder that holds the variables
     class NoteHolder extends RecyclerView.ViewHolder {
         private TextView textViewTitle;
